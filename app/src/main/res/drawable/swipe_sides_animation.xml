@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/swipe_sides1"
+        android:duration="300"/>
+    <item android:drawable="@drawable/swipe_sides2"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides3"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides4"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides5"
+        android:duration="300"/>
+    <item android:drawable="@drawable/swipe_sides4"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides3"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides2"
+        android:duration="100"/>
+    <item android:drawable="@drawable/swipe_sides1"
+        android:duration="300"/>
+
+
+
+
+
+</animation-list>

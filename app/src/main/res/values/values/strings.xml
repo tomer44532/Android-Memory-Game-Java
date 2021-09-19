@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Memeory Game</string>
+    <string name="start_btn">Start</string>
+    <string name="option_btn">Options</string>
+    <string name="cards_num_pick">Pick Amount of cards</string>
+    <string name="save_btn">Save</string>
+    <string name="back_btn">Back</string>
+    <string name="play_btn">Play</string>
+    <string name="two_players_btn">two players</string>
+    <string name="player_turn">Player</string>
+    <string name="score">score</string>
+    <string name="shop_btn">shop</string>
+</resources>

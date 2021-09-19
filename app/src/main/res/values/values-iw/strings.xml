@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memeory Game</string>
+    <string name="start_btn">התחל</string>
+    <string name="option_btn">אפשרויות</string>
+    <string name="cards_num_pick">בחר מספר קלפים</string>
+    <string name="save_btn">שמור</string>
+    <string name="back_btn">חזור</string>
+    <string name="play_btn">שחק</string>
+    <string name="two_players_btn">שני שחקנים</string>
+    <string name="player_turn">שחקן:</string>
+    <string name="score">ניקוד</string>
+    <string name="shop_btn">חנות</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item
+                android:drawable="@drawable/wood_pattern"
+                android:bottom="6dp"
+                android:left="6dp"
+                android:right="6dp"
+                android:top="6dp">
+                <shape
+                    android:padding="10dp"
+                    android:shape="rectangle"> >
+                    <corners android:radius="20dp"/>
+
+                </shape>
+
+            </item>
+
+            <item>
+                <shape
+                    android:padding="10dp"
+                    android:shape="rectangle">
+                    <corners android:radius="20dp" />
+                    <stroke
+                        android:width="6dp"/>
+                </shape>
+
+            </item>
+        </layer-list>
+
+    </item>
+
+
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item
+                android:drawable="@drawable/wood_pattern_pressed"
+                android:bottom="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp" />
+
+            <item>
+                <shape
+                    android:padding="10dp"
+                    android:shape="rectangle">
+                    <corners android:radius="20dp"  />
+                    <stroke
+                        android:width="5dp"/>
+                </shape>
+
+            </item>
+        </layer-list>
+
+    </item>
+</selector>

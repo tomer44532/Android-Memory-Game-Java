@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/menu_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/inventory_btn"
+            android:background="@color/transparent_full"
+            android:id="@+id/inventory_btn"/>
+        <ImageButton
+            android:id="@+id/music_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/transparent_full"
+            android:scaleType="fitXY"
+            android:layout_toEndOf="@id/inventory_btn"
+            android:src="@drawable/music_button" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/coin_icon"
+            android:layout_toStartOf="@+id/money_Tv"
+            android:background="@color/transparent_full"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/money_Tv"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/start_btn"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/start_btn"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/two_players_btn"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/start2_btn"/>
+
+<!--    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/option_btn"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/option_btn"/>-->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/shop_btn"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/shop_btn"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/quit"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/quit_btn"/>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

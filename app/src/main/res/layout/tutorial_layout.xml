@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest_game_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/forest_stage_bar"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:layout_marginVertical="15dp"
+                android:layout_marginStart="25dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="15dp"
+                        android:text="@string/shuffle_in"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@+id/shuffle_txt"/>
+
+
+                    <TextView
+                        android:id="@+id/shuffle_turns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:text="2"
+                        android:layout_below="@id/shuffle_txt"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/click2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/shuffle_cursor"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/forest_stage_title"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="0"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/stage_txt"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:layout_marginVertical="15dp"
+                android:layout_marginEnd="25dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/turns_left"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@+id/turns_txt"/>
+
+
+                    <TextView
+                        android:id="@+id/turns_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:text="10"
+                        android:layout_below="@id/turns_txt"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/click2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/turns_cursor"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/dialog_shape_inventory"
+            android:padding="10dp"
+            android:text="dgd"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:id="@+id/guide_txt"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/coin_icon"
+                        android:layout_toStartOf="@+id/money_Tv"
+                        android:background="@color/transparent_full"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/money_Tv"/>
+                </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="70dp">
+                <ImageButton
+                    android:id="@+id/reset_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transparent_full"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reset_btn_selector" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cursor_anim"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/reset_cursor"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:columnCount="4"
+                android:rowCount="4"
+                android:id="@+id/boardgame_layout">
+ <!--               <FrameLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.example.memorygame.GameCard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back_card_forest"
+                        android:padding="3dp"
+                        android:id="@+id/dog_card"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/click1"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+
+                        android:layout_below="@id/dog_card"/>
+
+                </FrameLayout>-->
+
+
+
+
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

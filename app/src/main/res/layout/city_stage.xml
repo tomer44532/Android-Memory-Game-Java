@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:id="@+id/forest_scroll_view"
+    android:background="@drawable/city_select_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/inventory_btn"
+            android:background="@color/transparent_full"
+            android:id="@+id/inventory_btn"/>
+        <ImageButton
+            android:id="@+id/shop_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent_full"
+            android:scaleType="fitXY"
+            android:layout_toEndOf="@id/inventory_btn"
+            android:src="@drawable/shop_btn" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/coin_icon"
+            android:layout_toStartOf="@+id/money_Tv"
+            android:background="@color/transparent_full"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/money_Tv"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/city_level_select">
+
+        <GridLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:rowCount="3"
+            android:columnCount="3"
+
+            android:layout_gravity="center|top"
+            android:id="@+id/stages_layout">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+                    android:textSize="25sp"
+                    android:tag="1"
+                    android:id="@+id/sewer1"
+                    android:stateListAnimator="@null"/>
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock1"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="4"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer4"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock4"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="7"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer7"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock7"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="2"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer2"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock2"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="5"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer5"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock5"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="8"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer8"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock8"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="3"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer3"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock3"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="6"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer6"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock6"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/city_enter_btn"
+
+                    android:textSize="25sp"
+                    android:tag="9"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/sewer9"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/lock"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/lock9"/>
+
+
+            </RelativeLayout>
+
+
+
+        </GridLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="top|center"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:background="@drawable/city_enter_btn"
+
+                android:textSize="25sp"
+                android:tag="10"
+                android:stateListAnimator="@null"
+                android:id="@+id/sewer10"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lock"
+                android:scaleType="fitXY"
+
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:id="@+id/lock10"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
