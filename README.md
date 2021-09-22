@@ -1,2 +1,3 @@
 # AndroidProject - Memory Game
-# Development Enviroment - Android Studio
+# Development enviroment - Android Studio
+# Programing language - Java
